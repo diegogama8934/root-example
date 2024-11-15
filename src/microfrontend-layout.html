@@ -18,11 +18,14 @@
   -->
 
   <main>
-    <route default>
-      <application name="@kronox/calendar"></application>
+    <route path="dashboard">
+      <application name="@kronox/dashboard"></application>
     </route>
-    <route path="operaciones">
+    <route path="operations">
       <application name="@kronox/operaciones"></application>
+    </route>
+    <route path="calendar">
+      <application name="@kronox/calendar"></application>
     </route>
   </main>
 </single-spa-router>
