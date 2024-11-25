@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Root Config</title>
-
+  
+  <script src="https://cdn.tailwindcss.com"></script>
   <!--
     Remove this if you only support browsers that support async/await.
     This is needed by babel to share largeish helper code for compiling async/await in older
@@ -35,8 +36,8 @@
     {
       "imports": {
         "single-spa": "https://cdn.jsdelivr.net/npm/single-spa@5.9.0/lib/system/single-spa.min.js",
-        "react": "https://cdn.jsdelivr.net/npm/react@16.13.1/umd/react.production.min.js",
-        "react-dom": "https://cdn.jsdelivr.net/npm/react-dom@16.13.1/umd/react-dom.production.min.js"
+        "react": "https://cdn.jsdelivr.net/npm/react@18.2.0/umd/react.production.min.js",
+        "react-dom": "https://cdn.jsdelivr.net/npm/react-dom@18.2.0/umd/react-dom.production.min.js"
       }
     }
   </script>
@@ -52,7 +53,9 @@
         "@kronox/calendar": "//localhost:8200/kronox-calendar.js",
         "@kronox/operaciones": "//localhost:8300/kronox-operaciones.js",
         "@kronox/dashboard": "//localhost:8100/kronox-dashboard.js",
-        "@kovan/root-config": "//localhost:9000/kovan-root-config.js"
+        "@kovan/root-config": "//localhost:9000/kovan-root-config.js",
+        "@kronox/login": "//localhost:8080/kronox-login.js",
+        "@kronox/ui": "//localhost:7900/kronox-ui.js"
       }
     }
   </script>

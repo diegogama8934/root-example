@@ -1,31 +1,16 @@
 <single-spa-router>
-  <!--
-
-    This is the single-spa Layout Definition for your microfrontends.
-    See https://single-spa.js.org/docs/layout-definition/ for more information.
-
-  -->
-
-  <!-- Example layouts you might find helpful:
-
-  <nav>
-    <application name="@org/navbar"></application>
-  </nav>
-  <route path="settings">
-    <application name="@org/settings"></application>
-  </route>
-
-  -->
-
   <main>
+    <route path="login">
+      <application name="@kronox/login" props="authToken,login,logout"></application>
+    </route>
     <route path="dashboard">
-      <application name="@kronox/dashboard"></application>
+      <application name="@kronox/dashboard" props="authToken,login,logout"></application>
     </route>
     <route path="operations">
-      <application name="@kronox/operaciones"></application>
+      <application name="@kronox/operaciones" props="authToken,login,logout"></application>
     </route>
     <route path="calendar">
-      <application name="@kronox/calendar"></application>
+      <application name="@kronox/calendar" props="authToken,login,logout"></application>
     </route>
   </main>
 </single-spa-router>
